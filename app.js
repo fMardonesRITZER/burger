@@ -5,9 +5,9 @@ const mongoose = require('mongoose');
 port = 3000;
 
 const app = express();
-
-
 app.set('view engine', 'hbs');
+
+
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
@@ -25,7 +25,9 @@ mongoose.connection.on('error', err => {
 
 //Controlares
 const homeController = require('./controllers/homeController');
+const productRoutes = require("./routes/products");
 
+app.use('/', productRoutes);
 
 //Rutas
 app.get('/', homeController.index);

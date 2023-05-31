@@ -5,4 +5,4 @@ const burgerSchema = new mongoose.Schema({
   precio_unitario: Number,
 });
 
-module.exports = mongoose.model('productos', burgerSchema);
+module.exports = mongoose.model('Products', burgerSchema);

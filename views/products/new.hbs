@@ -1,0 +1,12 @@
+<form action="/products" method="post">
+    <label for="name">Nombre:</label>
+    <input type="text" id="name" name="product[name]" required>
+  
+    <label for="description">Descripción:</label>
+    <textarea id="description" name="product[description]" required></textarea>
+  
+    <label for="price">Precio:</label>
+    <input type="number" id="price" name="product[price]" required>
+  
+    <button type="submit">Crear producto</button>
+  </form>
