@@ -2,7 +2,7 @@ const express = require ('express');
 const mongoose = require('mongoose');
 
 
-port = 3000;
+port = process.env.port || 3000;
 
 const app = express();
 app.set('view engine', 'hbs');
