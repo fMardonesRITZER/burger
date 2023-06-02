@@ -1,0 +1,13 @@
+<form action="/products/edit" method="post">
+  <input type="hidden" name="_method" value="PUT">
+  
+  <label for="producto">Nombre:</label>
+  <input type="text" id="producto" name="product[producto]" required>
+  
+  <label for="precio_unitario">Precio:</label>
+  <input type="number" id="precio_unitario" name="product[precio_unitario]" required>
+  
+  <button type="submit">Actualizar producto</button>
+</form>
+
+<a href="/products">Volver al listado de productos</a>

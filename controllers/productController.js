@@ -1,8 +1,8 @@
 const Product = require('../database/models/Productos');
 
 exports.index = async (req, res) => {
-  const products = await Product.find();
-  res.render('products/index', { products });
+  const product = await Product.find();
+  res.render('products/index', { product });
 };
 
 exports.new = (req, res) => {

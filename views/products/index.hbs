@@ -1,11 +1,9 @@
 <a href="/products/new">Nuevo producto</a>
 
 <ul>
-
-  {{#each productos}}
+  {{#each product}}
     <li>
-      <a href="/products/products._id"> productos.name </a>
+      <a href="/products/{{_id}}">{{producto}}</a>
     </li>
   {{/each}}
-
 </ul>
