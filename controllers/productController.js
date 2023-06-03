@@ -5,6 +5,8 @@ exports.index = async (req, res) => {
   res.render('products/index', { product });
 };
 
+
+
 exports.new = (req, res) => {
     res.render('products/new');
 };
@@ -16,9 +18,14 @@ exports.create = async (req, res) => {
 };
 
 exports.show = async (req, res) => {
-  const product = await Product.findById(req.params.id);
-  res.render('products/show', { product });
-};
+    const product = await Product.findById(req.params.id);
+    if (product) {
+      res.render('products/show', { product });
+    } else {
+      // Manejar el caso en el que no se encuentre el producto
+      res.send('Producto no encontrado');
+    }
+  };
 
 exports.edit = async (req, res) => {
   const product = await Product.findById(req.params.id);
@@ -31,8 +38,16 @@ exports.update = async (req, res) => {
   res.redirect(`/products/${product._id}`);
 };
 
-exports.delete = async (req, res) => {
-  const { id } = req.params;
-  await Product.findByIdAndDelete(id);
-  res.redirect('/products');
-};
+/* exports.delete = async (req, res) => {
+    const { id } = req.params;
+    await Product.findByIdAndDelete(id);
+    res.redirect('/products');
+  }; */
+
+  exports.delete = async (req, res) => {
+    const { id } = req.params;
+    await Product.findByIdAndDelete(id); // Utilizamos findByIdAndDelete para eliminar el producto físicamente de la base de datos
+    res.redirect('/products');
+  };
+  
+

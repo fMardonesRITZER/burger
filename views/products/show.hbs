@@ -3,10 +3,12 @@
 
 <a href="/products/{{ product._id }}/edit">Editar</a>
 
-<form action="/products/{{ product._id }}" method="post">
-  <input type="hidden" name="_method" value="delete">
+<form action="/products/{{ product._id }}/delete" method="post">
+  <input type="hidden" name="_method" value="DELETE">
   <button type="submit">Eliminar</button>
 </form>
 
+
 <a href="/products">Volver al listado de productos</a>
+
 
