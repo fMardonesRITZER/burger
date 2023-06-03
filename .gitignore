@@ -4,6 +4,7 @@
 /.cache
 /.vscode
 /.idea
+node_modules/
 
 # Ignorar archivos y directorios generados durante la ejecución
 npm-debug.log
