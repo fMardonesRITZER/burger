@@ -25,15 +25,15 @@ app.use(methodOverride('_method'));
 
 // Controladores y rutas
 const homeController = require('./controllers/homeController');
-
+const productRoutes = require('./routes/products');
+app.use('/products', productRoutes);
 
 
 
 app.get('/', homeController.index);
 
 
-const productRoutes = require('./routes/products');
-app.use('/products', productRoutes);
+
 
 
 // Iniciar el servidor

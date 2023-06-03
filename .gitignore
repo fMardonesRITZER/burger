@@ -1,1 +1,19 @@
+# Ignorar directorios generados por herramientas de desarrollo
 /node_modules
+/dist
+/.cache
+/.vscode
+/.idea
+
+# Ignorar archivos y directorios generados durante la ejecución
+npm-debug.log
+yarn-error.log
+.DS_Store
+
+# Ignorar archivos de configuración específicos de entorno
+.env
+
+# Ignorar archivos de dependencias de desarrollo
+# (puedes ajustar esto dependiendo de tus necesidades)
+/package-lock.json
+/yarn.lock
