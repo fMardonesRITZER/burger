@@ -1,5 +1,5 @@
-<form action="/products/edit" method="post">
-  <input type="hidden" name="_method" value="PUT">
+<form action="/products/{{ product._id }}" method="post">
+  <input type="hidden" name="_method" value="post">
   
   <label for="producto">Nombre:</label>
   <input type="text" id="producto" name="product[producto]" required>
@@ -9,5 +9,3 @@
   
   <button type="submit">Actualizar producto</button>
 </form>
-
-<a href="/products">Volver al listado de productos</a>

@@ -1,6 +1,6 @@
 const express = require ('express');
 const mongoose = require('mongoose');
-
+const methodOverride = require('method-override')
 
 port = process.env.port || 3000;
 
@@ -22,6 +22,12 @@ mongoose.connection.on('error', err => {
 
 
 
+//METODO OVERRIDE
+
+
+
+app.use(methodOverride('_method'))
+
 
 //Controlares
 const homeController = require('./controllers/homeController');
@@ -31,6 +37,8 @@ app.use('/', productRoutes);
 
 //Rutas
 app.get('/', homeController.index);
+
+
 
 
 
