@@ -11,7 +11,7 @@ Este proyecto es un ejemplo de uso de Node.js con Express.js, donde se conecta a
 
 1. Clona el repositorio: `git clone https://github.com/tu-usuario/burger.git`
 2. Entra al directorio del proyecto: `cd burger`
-3. Instala las dependencias: `npm install`
+3. Instala las dependencias: `npm install express nodemon hbs`
 
 ## Configuración
 

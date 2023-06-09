@@ -18,10 +18,12 @@ async function connectDatabase() {
 
 connectDatabase();
 
+
 // Middlewares
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
 app.use(methodOverride('_method'));
+
 
 // Controladores y rutas
 const homeController = require('./controllers/homeController');
@@ -31,7 +33,6 @@ app.use('/products', productRoutes);
 
 
 app.get('/', homeController.index);
-
 
 
 

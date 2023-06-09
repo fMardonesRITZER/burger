@@ -5,8 +5,6 @@ exports.index = async (req, res) => {
   res.render('products/index', { product });
 };
 
-
-
 exports.new = (req, res) => {
     res.render('products/new');
 };
@@ -16,6 +14,7 @@ exports.create = async (req, res) => {
   await product.save();
   res.redirect(`/products/${product._id}`);
 };
+
 
 exports.show = async (req, res) => {
     const product = await Product.findById(req.params.id);

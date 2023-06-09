@@ -1,0 +1,32 @@
+[{
+  "_id": {
+    "$oid": "64793c1a949640d026b849b8"
+  },
+  "producto": "Hamburguesa Simple",
+  "precio_unitario": 1500,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64793cecb584fbec9edd3352"
+  },
+  "producto": "Hamburguesa Doble",
+  "precio_unitario": 1850,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "647b64cb3a9b0162f8237797"
+  },
+  "producto": "Hamburguesa Triple",
+  "precio_unitario": 2000,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "647b65a344d837e6bc971aca"
+  },
+  "producto": "Hamburguesa Cuadruple",
+  "precio_unitario": 2800,
+  "__v": 0
+}]
