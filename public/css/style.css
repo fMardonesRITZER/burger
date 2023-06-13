@@ -1,63 +1,97 @@
-body {
-    margin: 0%;
-    padding: 0%;
-    background-image: url('../img/fondo_pagina.jpg');
-    background-size: cover;
-    box-sizing: border-box;
+.container {
+    width: 100%;
+    max-width: 100%;
+    min-height: 100vh;
 }
 
-
-.header {
-    background-color: #f4c62d;
-    display: inline;
-}
-
-
-.product {
-    align-items: center;
-    text-align: center;
-}
-
-
-.slide-item h1 {
-    font-size: 6rem;
-    color: white;
-    font-weight: 700;
-    line-height: .9;
-}
-
-
-.slide-item p {
-    font-size: 1.25rem;
-    color: white;
-    margin: 0;
-}
-
-
-.btn-yellow {
-    background: yellow !important;
-    font-family: "Praktika Rounded";
-    font-size: 1.25rem;
-    font-weight: 700;
-    letter-spacing: 1px;
-}
-
-
-.no-underline {
-    text-decoration: none;
-    color: blue;
-}
-
-
-.m-0 {
-    margin: 0!important;
-}
-
-
-.row {
-    background-color: yellow;
+.superior {
     display: flex;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
+    flex-direction: column;
+    background-image:url(../img/fondo_superior.jpg);
+    background-color: #000 ;
+    color: #fff;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+
+.superior-container {
+    width: 100%;
+    max-width: 1110px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Praktika Rounded";
+    font-weight: 700;
+    font-size: 5rem;
+}
+
+.superior-banner-inner-texto {
+    font-size: 15px;
+    font-family: "Praktika Rounded";
+}
+
+
+.superior-header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: flex;
+    justify-content: center;
+}
+.superior-header img {
+    width: 170px;
+    height: 112.13;
+}
+
+.superior-banner {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+.inferior {
+    background-color: #fbbe00;
+    display: flex;
+}
+
+.sub-container {
+    width: 50%;
+    max-width: 50%;
+}
+
+.inferior-texto {
+    display: flex;
+    align-items: center;
+}
+
+.inferior-texto-inner {
+    width: 50%;
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Praktika Rounded";
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+h3 {
+    color: white;
+}
+
+
+.inferior-image {
+    background-image:url(../img/inferior.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
