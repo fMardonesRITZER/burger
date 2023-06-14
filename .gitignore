@@ -5,6 +5,8 @@
 /.vscode
 /.idea
 node_modules/
+tmp/*
+!tmp/.gitkeep
 
 # Ignorar archivos y directorios generados durante la ejecución
 npm-debug.log

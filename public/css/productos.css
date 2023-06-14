@@ -1,0 +1,41 @@
+/* Estilos personalizados para el formulario */
+.productos {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Estilos para las etiquetas de los campos */
+  .productos label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  /* Estilos para los campos de entrada */
+  .productos input[type="text"],
+  .productos input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Estilos para el botón de enviar */
+  .productos button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Estilos para el botón de enviar al pasar el cursor por encima */
+  .productos button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
