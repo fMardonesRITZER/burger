@@ -21,27 +21,10 @@ Uso
 Inicia el servidor localmente: npm start o npm run dev (con nodemon)
 Accede a la aplicación en tu navegador web utilizando la URL: http://localhost:3000
 Contribución
+
+
 Si deseas contribuir a este proyecto, sigue los siguientes pasos:
-<<<<<<< HEAD
 
-Haz un fork del repositorio
-Crea una nueva rama: git checkout -b feature/nueva-funcionalidad
-Realiza los cambios y realiza commit: git commit -am 'Agregar nueva funcionalidad'
-Push a la rama: git push origin feature/nueva-funcionalidad
-Crea un pull request en el repositorio original
-Licencia
-Este proyecto está bajo la Licencia MIT.
-=======
-
-Haz un fork del repositorio
-Crea una nueva rama: git checkout -b feature/nueva-funcionalidad
-Realiza los cambios y realiza commit: git commit -am 'Agregar nueva funcionalidad'
-Push a la rama: git push origin feature/nueva-funcionalidad
-Crea un pull request en el repositorio original
-Licencia
-Este proyecto está bajo la Licencia MIT.
-
->>>>>>> b8e056515002adb407538ae41652511fed45550d
 
 
 
