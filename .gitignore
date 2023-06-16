@@ -1,21 +1,21 @@
 # Ignorar directorios generados por herramientas de desarrollo
-/node_modules
 /dist
 /.cache
 /.vscode
 /.idea
-node_modules/
 tmp/*
 !tmp/.gitkeep
+/node_modules
 
 # Ignorar archivos y directorios generados durante la ejecución
 npm-debug.log
 yarn-error.log
-.DS_Store                                    
+.DS_Store
 
 # Ignorar archivos de dependencias de desarrollo
 # (puedes ajustar esto dependiendo de tus necesidades)
 /package-lock.json
-/yarn.lock 
+/yarn.lock
 
+# Ignorar archivo de variables de entorno
 .env
