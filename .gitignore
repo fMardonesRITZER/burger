@@ -11,12 +11,11 @@ tmp/*
 # Ignorar archivos y directorios generados durante la ejecución
 npm-debug.log
 yarn-error.log
-.DS_Store
-
-# Ignorar archivos de configuración específicos de entorno
-.env
+.DS_Store                                    
 
 # Ignorar archivos de dependencias de desarrollo
 # (puedes ajustar esto dependiendo de tus necesidades)
 /package-lock.json
-/yarn.lock
+/yarn.lock 
+
+.env
